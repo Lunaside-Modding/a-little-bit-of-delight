@@ -33,7 +33,7 @@ public class ModItemGroups {
                         entries.add(AModItems.BLUEBERRY_JUICE);
                         entries.add(AModItems.BLUEBERRY_MILK);
                         entries.add(AModItems.BLUEBERRY_SYRUP);
-                        entries.add(AModItems.BLUEBERRY_SCONE);
+                        entries.add(AModItems.BLUEBERRY_CONCENTRATE);
 
                     }).build());
 

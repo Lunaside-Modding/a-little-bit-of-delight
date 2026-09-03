@@ -38,6 +38,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(AModItems.BLUEBERRY_JUICE, Models.GENERATED);
         itemModelGenerator.register(AModItems.BLUEBERRY_MILK, Models.GENERATED);
         itemModelGenerator.register(AModItems.BLUEBERRY_SYRUP, Models.GENERATED);
-        itemModelGenerator.register(AModItems.BLUEBERRY_SCONE, Models.GENERATED);
+        itemModelGenerator.register(AModItems.BLUEBERRY_CONCENTRATE, Models.GENERATED);
     }
 }

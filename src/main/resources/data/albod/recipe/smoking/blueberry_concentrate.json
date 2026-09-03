@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "albod:blueberry_syrup"
+    },
+    "result": {
+        "id": "albod:blueberry_concentrate"
+    },
+    "experience": 0.35,
+    "cookingtime": 100,
+    "group": "blueberry_concentrate"
+}

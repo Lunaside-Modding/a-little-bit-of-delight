@@ -5,7 +5,7 @@
   "item.albod.blueberry_pie_slice": "Slice of Blueberry Pie",
   "item.albod.empty_jar": "Glass Jar",
   "item.albod.gelatin_powder": "Gelatin Powder",
-  "item.albod.raw_gelatin_brick": "Raw Gelatin",
+  "item.albod.raw_gelatin_brick": "Jar of Raw Gelatin",
   "item.albod.blueberry_jelly": "Jar of Blueberry Jelly",
   "item.albod.blueberry_jam": "Jar of Blueberry Jam",
   "item.albod.blueberry_jelly_sandwich": "Blueberry Jelly Sandwich",
@@ -13,7 +13,7 @@
   "item.albod.blueberry_juice": "Blueberry Juice",
   "item.albod.blueberry_milk": "Blueberry Milk",
   "item.albod.blueberry_syrup": "Blueberry Syrup",
-  "item.albod.blueberry_scone": "Blueberry Scone",
+  "item.albod.blueberry_concentrate": "Blueberry Concentrate",
 
   "farmersdelight.tooltip.blueberry_milk": "Clears 1 Effect, and gives Instant Health and Health Boost for 10 seconds",
 

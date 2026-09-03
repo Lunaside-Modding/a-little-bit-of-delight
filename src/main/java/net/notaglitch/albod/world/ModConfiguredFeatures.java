@@ -22,7 +22,7 @@ public class ModConfiguredFeatures {
                 ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(AModBlocks.BLUEBERRY_BUSH
                                 .getDefaultState().with(BlueberryBushBlock.AGE, 3))),
-                        List.of(Blocks.GRASS_BLOCK)));
+                        List.of(Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL, Blocks.COARSE_DIRT, Blocks.ROOTED_DIRT, Blocks.MOSS_BLOCK, Blocks.MUD)));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String  name) {

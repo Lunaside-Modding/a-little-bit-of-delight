@@ -18,8 +18,6 @@ public class ModFoodComponents {
     public static final FoodComponent BLUEBERRY_COOKIE = new FoodComponent.Builder().nutrition(2).saturationModifier(0.10f)
             .build();
 
-    public static final FoodComponent SCONE = new FoodComponent.Builder().nutrition(4).saturationModifier(0.5f).statusEffect(new StatusEffectInstance(ModEffects.COMFORT, 1500), 1.0f)
-            .build();
 
     public static final FoodComponent BLUEBERRY_PIE_SLICE = new FoodComponent.Builder().nutrition(3).saturationModifier(0.25f)
             .build();

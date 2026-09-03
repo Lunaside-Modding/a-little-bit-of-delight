@@ -4,22 +4,19 @@
     "count": 1,
     "id": "albod:empty_jar"
   },
-  "experience": 6.0,
-  "cookingtime": 400,
+  "experience": 3.5,
+  "cookingtime": 200,
   "ingredients": [
     {
-      "item": "minecraft:bone"
+      "item": "albod:blueberry_concentrate"
     },
     {
-      "item": "minecraft:bone"
-    },
-    {
-      "item": "minecraft:bone"
+      "item": "albod:raw_gelatin_brick"
     }
   ],
   "recipe_book_tab": "misc",
   "result": {
     "count": 1,
-    "id": "albod:raw_gelatin_brick"
+    "id": "albod:blueberry_jelly"
   }
 }

@@ -38,7 +38,7 @@ public class AModItems {
     public static final Item GELATIN_POWDER = registerItem("gelatin_powder",
             new Item(new Item.Settings()));
     public static final Item RAW_GELATIN_BRICK = registerItem("raw_gelatin_brick",
-            new Item(new Item.Settings().food(ModFoodComponents.RAW_GELATIN_BRICK)));
+            new Item(new Item.Settings().food(ModFoodComponents.RAW_GELATIN_BRICK).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item BLUEBERRY_JELLY = registerItem("blueberry_jelly",
             new Item(new Item.Settings().food(JELLY.get()).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item BLUEBERRY_JAM = registerItem("blueberry_jam",
@@ -53,14 +53,12 @@ public class AModItems {
             new BlueberryMilkItem(new Item.Settings().food(ModFoodComponents.BMILK).recipeRemainder(Items.GLASS_BOTTLE).maxCount(16)));
     public static final Item BLUEBERRY_SYRUP = registerItem("blueberry_syrup",
             new Item(new Item.Settings().food(ModFoodComponents.SYRUP).recipeRemainder(Items.GLASS_BOTTLE).maxCount(16)));
-    public static final Item BLUEBERRY_SCONE = registerItem("blueberry_scone",
-            new Item(new Item.Settings().food(ModFoodComponents.SCONE)));
+    public static final Item BLUEBERRY_CONCENTRATE = registerItem("blueberry_concentrate",
+            new Item(new Item.Settings().food(ModFoodComponents.SYRUP).recipeRemainder(Items.GLASS_BOTTLE).maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ALittleBitOfDelight.MOD_ID, name), item);
     }
-
-
 
     public static void registerModItems(){
         ALittleBitOfDelight.LOGGER.info("Registering Mod Items for " + ALittleBitOfDelight.MOD_ID);
@@ -79,8 +77,8 @@ public class AModItems {
             entries.add(TOAST_WITH_BLUEBERRY_JELLY);
             entries.add(BLUEBERRY_MILK);
             entries.add(BLUEBERRY_JUICE);
-            entries.add(BLUEBERRY_SCONE);
             entries.add(BLUEBERRY_SYRUP);
+            entries.add(BLUEBERRY_CONCENTRATE);
         });
 
     }

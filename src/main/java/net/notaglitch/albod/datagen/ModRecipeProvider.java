@@ -22,6 +22,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> GELATIN_POWDER = List.of(AModItems.RAW_GELATIN_BRICK);
+        List<ItemConvertible> BLUEBERRY_SYRUP = List.of(AModItems.BLUEBERRY_SYRUP);
 
         // Shaped Crafting
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, AModBlocks.BLUEBERRY_CHEESECAKE)
@@ -59,17 +60,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', AModItems.BLUEBERRIES)
                 .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, AModItems.BLUEBERRY_SCONE, 3)
-                .pattern("WBW")
-                .pattern("BWB")
-                .pattern("EMS")
-                .input('B', AModItems.BLUEBERRIES)
-                .input('W', Items.WHEAT)
-                .input('E', Items.EGG)
-                .input('M', Items.MILK_BUCKET)
-                .input('S', Items.SUGAR)
-                .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
-                .offerTo(exporter);
 
         // Shapeless Crafting
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, AModItems.BLUEBERRY_COOKIE)
@@ -96,7 +86,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
 
-        // Smelting Crafting
+        // Smelting & Cooking Crafting
         offerSmelting(exporter, GELATIN_POWDER, RecipeCategory.FOOD, AModItems.GELATIN_POWDER, 0.3f, 300, "gelatin_powder");
+        offerSmelting(exporter, BLUEBERRY_SYRUP, RecipeCategory.FOOD, AModItems.BLUEBERRY_CONCENTRATE, 0.35f, 200, "blueberry_concentrate");
     }
 }
